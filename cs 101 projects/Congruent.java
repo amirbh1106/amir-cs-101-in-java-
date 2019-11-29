@@ -36,15 +36,21 @@ public class Congruent {
 
 
         System.out.println("the secend triangle is " + "(" + "x" + vertex4x + "," + "y" + vertex4y + ")" + "(" + "x" + vertex5x + "," + "y" + vertex5y + ")" + "(" + "x" + vertex6x + "," + "y" + vertex6y + ")" );
-        System.out.println("the lengths are " + length4 + " " + length5 + " " +length6);
+//        System.out.println("the lengths are " + length4 + " " + length5 + " " +length6); //debug
 
-        if(length1 == length4 || length1 == length5 || length1 == length6){
-            if(length2 == length4 || length2 == length5 || length2 == length6){
-                if(length3 == length4 || length3 == length5 || length3 == length6){
-                    System.out.println("the triangles are congruent");
-                }else{System.out.println("the triangles are not congruent");}
-            }else{System.out.println("the triangles are not congruent");}
-        }else{System.out.println("the triangles are not congruent");}
+        System.out.println(length1 +""+ length2 + "" + length3 + "" + length4 + "" + length5 + "" + length6);
+
+
+        if(length1 == length4 && length2 == length5 && length3 == length6){
+            System.out.println("the triangles are congruent");
+        }else{
+            if(length2 == length5 && length1 == length6 && length3 == length4){
+                System.out.println("the triangles are congruent");
+            }else{
+                System.out.println("the triangles are not congruent");
+            }
+        }
+
 
 
     }
